@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <img class="header__img" src="../imagenes/Patitared.png" alt="Logo">
+    <nav class="nav">
+      <ul class="nav__lista">
+        <li><a class="nav__item" href="../index.html">Inicio</a></li>
+        <li><a class="nav__item" href="quienesomos.html">Quiénes somos</a></li>
+        <li><a class="nav__item" href="perritos.html">Perritos</a></li>
+        <li><a class="nav__item" href="gatitos.html">Gatitos</a></li>
+        <li><a class="nav__item" href="queresadoptar.html">Querés adoptar?</a></li>
+        <li><a class="nav__item" href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="sec2">
+      <div class="sec2__form">
+          <h1 class="form__title">¿Querés adoptar?</h1>
+          <h2 class="form__subtitle">Contanos un poco de vos!</h2>
+          <form action="" class="form__form">
+          <div class="form__form--Nombre"><label for="Nombre">Nombre</label>
+              <input type="text" id="Nombre" name="nombre" placeholder="Ingrese su nombre">
+          </div>
+
+          <div class="form__form--Correo"><label for="Correo">Correo electrónico</label>
+              <input type="text" name="Correo" id="Correo" placeholder="Ingrese su e-mail">
+          </div>
+
+          <div>
+              <label for="Edad">Edad</label>
+              <input type="number" name="Edad" id="Edad">
+              <label for="Vivienda">Vivis en</label>
+              <select name="Vivienda" id="Vivienda">
+              <option value="Casa">Casa</option>
+              <option value="Depto">Departamento</option>
+              </select>
+          </div>
+
+          <div>
+              <label for="Mujer">Mujer</label>
+              <input type="radio" id="Mujer" name="Genero" value="Mujer">
+              <label for="Hombre">Hombre</label>
+              <input type="radio" id="Hombre" name="Genero" value="Hombre">
+              <label for="Otro">Otro</label>
+              <input type="radio" id="Otro" name="Genero" value="Otro">
+          </div>
+
+          <div><label for="Adopt">¿Por qué querés adoptar?</label></div>
+          <textarea name="Adopt" id="Adopt" cols="52" rows="10"></textarea>
+          <div>
+              <input class="bold" type="submit" value="Enviar">
+              <input class="bold" type="reset" value="Limpiar todo">
+          </div>
+
+
+          </form>
+     </div>
+  </main>
+  <footer class="foot">
+    <img src="../imagenes/Patitared.png" alt="Logo">
+    <p class="foot__amigo">Amigo a Casa ® 2022 - Buenos Aires, Argentina</p>
+    <h4 class="foot__derechos">Todos los derechos reservados</h4>
+</footer>
+</body>
+</html>
