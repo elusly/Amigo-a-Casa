@@ -191,6 +191,7 @@ ul {
     padding-left: 10pt;
     padding-top: 20pt;
     padding-bottom: 10pt;
+    padding-right: 10pt;
     margin-bottom: 10pt;
     display: flex;
     flex-direction: row;
@@ -208,6 +209,7 @@ ul {
 .quienessomos__titulo {
     font-size: 30px;
     grid: qs1;
+    padding-left: 50pt;
 }
 .nosotros {
     grid-area: qs2;
@@ -222,6 +224,45 @@ ul {
     text-align: justify;
     width: 600px;
     height: 400px;
+}
+.quienessomos__img {
+    width: auto;
+    height: auto;
+}
+.quienessomos__img img:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+    box-shadow: 0 0 10px rgba(33, 33, 33, .5 );
+}
+.equipo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50pt;
+    margin-bottom: 10pt;
+    gap: 10pt;
+}
+.equipo__1, .equipo__2, .equipo__3, .equipo__4 {
+    width: 300px;
+    height: 500px;
+    border: 1pt solid black;
+    margin-top: 20pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.equipo__img {
+    margin-top: 10pt;
+    border: 1pt solid black;
+}
+.equipo__img:hover {
+    transform: scale(1.5);
+    transition: transform 1s;
+}
+.equipo__tx {
+    text-align: justify;
+    padding-left: 10pt;
+    padding-right: 10pt;
 }
 .cat__title {
     padding-left: 10pt;
