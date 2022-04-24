@@ -313,6 +313,13 @@ ul {
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
+    color: black;
+}
+.cuadrito__link:hover {
+    color: blueviolet;
+    text-decoration: underline;
+
+    
 }
 
 .Perritos__title {
