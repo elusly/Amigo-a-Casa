@@ -5,6 +5,9 @@
 
     
 }
+html {
+    scroll-padding-top: 80px;
+}
 body {
     font-family:'Poppins', sans-serif;
     background-color: ghostwhite;
@@ -222,9 +225,11 @@ ul {
 }
 .cat__title {
     padding-left: 10pt;
+    font-size: 40px;
 }
 .cat__p {
     padding-left: 10pt;
+    font-size: 20px;
 }
 .cat__grid {
     padding: 50pt;
@@ -285,7 +290,13 @@ ul {
     flex-direction: row;
     align-items: center;
 }
-.lolita__p, .milan__p{
+.stefan__flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.lolita__p, .milan__p, .stefan__p{
     width: 400px;
     height: 200px;
     text-align: justify;
@@ -293,6 +304,15 @@ ul {
 }
 .cuadrito__title {
     text-decoration: underline;
+}
+.cuadrito__img {
+    border: 3pt solid rgb(19, 18, 18);
+}
+.cuadrito__link {
+    padding-left: 10pt;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .Perritos__title {
