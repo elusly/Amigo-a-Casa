@@ -381,6 +381,15 @@ ul {
         padding-bottom: 10pt;
         justify-content: space-between;
     }
+    .header__index {
+        flex-direction: row;
+        height: 100px;
+        margin-top: 0pt;
+        padding-left: 15pt;
+        padding-bottom: 10pt;
+        align-items: center;
+        justify-content: space-between;
+    }
     .header__img {
         padding-top: 17pt;
         margin-left: 0pt;
@@ -390,7 +399,6 @@ ul {
         font-size: 30pt;
         text-align: right;
         display: block;
-        padding-left: 400px;
 
     }    
     .nav__lista {
