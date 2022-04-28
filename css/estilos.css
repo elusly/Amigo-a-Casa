@@ -371,7 +371,7 @@ ul {
 @media screen and (max-width: 600px) {
     body { 
         background-color: rgb(239, 226, 245);
-        width: 100%;
+    
     }
     .header {
         flex-direction: row;
@@ -380,25 +380,28 @@ ul {
         padding-left: 15pt;
         padding-bottom: 10pt;
         justify-content: space-between;
+        padding-right: 15pt;
     }
     .header__index {
-        flex-direction: row;
         height: 100px;
         margin-top: 0pt;
         padding-left: 15pt;
         padding-bottom: 10pt;
-        align-items: center;
         justify-content: space-between;
+        padding-right: 15pt;
     }
     .header__img {
         padding-top: 17pt;
         margin-left: 0pt;
         padding-bottom: 10pt;
     }
+  
+    
     .icono {
         font-size: 30pt;
         text-align: right;
         display: block;
+        color: black;
 
     }    
     .nav__lista {
@@ -410,6 +413,7 @@ ul {
     }
     .secintro {
         flex-direction: column;
+        align-items: center;
     }
     .intro__title {
         font-size: 30pt;
@@ -423,24 +427,28 @@ ul {
     }
     .intro__motto{
         font-size: 13px;
-        padding-top: 80px;
         width: 300px;
-        height: 250px;
+        height: auto;
         align-items: center;
         padding-left: 5pt;
         padding-right: 5pt;
-        
+        justify-content: center;
     }
     .secmenu {
-        margin-top: 380px;
         flex-direction: column;
-        margin-left: 40px;
+        justify-content: center;
+        align-items: center;
         background-image: none;
+        padding-right: 0px;
+        height: auto;
     }
     .secmenu__title {
         text-align: center;
     }
-    
+    .secmenu__fotos {
+        display: flex;
+        flex-direction: column;
+    }
 
     .sec2 {
         flex-direction: column;
@@ -473,6 +481,12 @@ ul {
     .quienessomos {
         width: 100%;
         
+    }
+    .foot {
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
     }
 
 }
