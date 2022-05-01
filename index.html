@@ -14,17 +14,30 @@
 </head>
 <body class="body">
     <header class="header__index">
-        <img class="header__img" src="imagenes/Patitared.png" alt="Logo">
-        <nav class="nav">
-            <ul class="nav__lista">
-                <li><a class="nav__item" href="index.html">Inicio</a></li>
-                <li><a class="nav__item" href="pages/quienesomos.html">Quiénes somos</a></li>
-                <li><a class="nav__item" href="pages/perritos.html">Perritos</a></li>
-                <li><a class="nav__item" href="pages/gatitos.html">Gatitos</a></li>
-                <li><a class="nav__item" href="pages/queresadoptar.html">Querés Adoptar?</a></li>
-              </ul>
-        </nav>
-        <i class= "icono fas fa-bars"></i>
+        <div class="header__index--1">
+            <img class="header__img" src="imagenes/Patitared.png" alt="Logo">
+            <nav class="nav">
+                <ul class="nav__lista">
+                    <li><a class="nav__item" href="index.html">Inicio</a></li>
+                    <li><a class="nav__item" href="pages/quienesomos.html">Quiénes somos</a></li>
+                    <li><a class="nav__item" href="pages/perritos.html">Perritos</a></li>
+                    <li><a class="nav__item" href="pages/gatitos.html">Gatitos</a></li>
+                    <li><a class="nav__item" href="pages/queresadoptar.html">Querés Adoptar?</a></li>
+                </ul>
+            </nav>
+            <a class="hamburguesa"data-bs-toggle="collapse" href="#menumobile" role="button" aria-expanded="false" aria-controls="collapseExample"><i class= "icono fas fa-bars"></i></a>
+        </div>
+        <div class="collapse menudesplegado" id="menumobile">
+            <nav class="nav">
+                <ul class="nav__lista--mobile">
+                    <li><a class="nav__item" href="index.html">Inicio</a></li>
+                    <li><a class="nav__item" href="pages/quienesomos.html">Quiénes somos</a></li>
+                    <li><a class="nav__item" href="pages/perritos.html">Perritos</a></li>
+                    <li><a class="nav__item" href="pages/gatitos.html">Gatitos</a></li>
+                    <li><a class="nav__item" href="pages/queresadoptar.html">Querés Adoptar?</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="mainindex">
         <h1 class="intro__title">Amigo a casa®</h1>

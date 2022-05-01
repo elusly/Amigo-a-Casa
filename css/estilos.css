@@ -43,10 +43,20 @@ ul {
     height: 70px;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
+.header__index--1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
 
 .header__img {
     margin-left: 10px;
@@ -56,6 +66,10 @@ ul {
     width: 100%;
     text-transform: uppercase;
 }
+ul {
+    margin-bottom: 0;
+}
+
 .nav__lista {
     display: flex;
     text-align: center;
@@ -118,7 +132,10 @@ ul {
     color: #FD8EA0;
     font-weight: bold;
 }
-
+.hamburguesa {
+    text-decoration: none;
+    display: none;
+}
 .secmenu {
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
@@ -385,17 +402,39 @@ ul {
     .header__index {
         height: 100px;
         margin-top: 0pt;
-        padding-left: 15pt;
+        
         padding-bottom: 10pt;
         justify-content: space-between;
-        padding-right: 15pt;
+
+        overflow-y: visible;
     }
     .header__img {
         padding-top: 17pt;
         margin-left: 0pt;
         padding-bottom: 10pt;
     }
-  
+    .header__index--1 {
+        padding-left: 15pt;
+        padding-right: 15pt;
+    }
+    .menudesplegado {
+        margin-top: 1rem;
+        padding-left: 1rem;
+        padding-top: .5rem;
+        background: whitesmoke;
+        z-index: 1;
+        width: 100%;
+    }
+    .hamburguesa {
+        display: block;
+    }
+    .menudesplegado  li {
+        padding-top: 1rem;
+        font-size: x-large;
+    }
+    .menudesplegado li:last-child {
+        padding-bottom: 1rem;
+    }
     
     .icono {
         font-size: 30pt;
@@ -406,6 +445,9 @@ ul {
     }    
     .nav__lista {
         display: none;
+    }
+    .nav__lista--mobile {
+        flex-direction: column;
     }
     
     .mainindex {
@@ -433,6 +475,8 @@ ul {
         padding-left: 5pt;
         padding-right: 5pt;
         justify-content: center;
+        padding-top: 0px;
+        padding-bottom: 10pt;
     }
     .secmenu {
         flex-direction: column;
