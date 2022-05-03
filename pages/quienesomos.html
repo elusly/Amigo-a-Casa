@@ -5,27 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiénes somos</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <img class="header__img" src="../imagenes/Patitared.png" alt="Logo">
-    <span class="icono"><i class="fas fa-bars"></i></span>
-    <nav class="nav">
-      <ul class="nav__lista">
-        <li><a class="nav__item" href="../index.html">Inicio</a></li>
-        <li><a class="nav__item" href="quienesomos.html">Quiénes somos</a></li>
-        <li><a class="nav__item" href="perritos.html">Perritos</a></li>
-        <li><a class="nav__item" href="gatitos.html">Gatitos</a></li>
-        <li><a class="nav__item" href="queresadoptar.html">Querés adoptar?</a></li>
-      </ul>
-    </nav>
+  <header class="header__index">
+    <div class="header__index--1">
+        <img class="header__img" src="../imagenes/Patitared.png" alt="Logo">
+        <nav class="nav">
+            <ul class="nav__lista">
+              <li><a class="nav__item" href="../index.html">Inicio</a></li>
+              <li><a class="nav__item" href="quienesomos.html">Quiénes somos</a></li>
+              <li><a class="nav__item" href="perritos.html">Perritos</a></li>
+              <li><a class="nav__item" href="gatitos.html">Gatitos</a></li>
+              <li><a class="nav__item" href="queresadoptar.html">Querés adoptar?</a></li>
+            </ul>
+        </nav>
+        <a class="hamburguesa"data-bs-toggle="collapse" href="#menumobile" role="button" aria-expanded="false" aria-controls="collapseExample"><i class= "icono fas fa-bars"></i></a>
+    </div>
   </header>
-  <main class="main">
+  <main class="mainquien">
     <h1 class="quienessomos__titulo">Quiénes somos</h1>
     <section class="nosotros">
 
@@ -63,8 +65,8 @@
   <footer class="foot">
     <img src="../imagenes/Patitared.png" alt="Logo" width="30px" height="30px">
     <p class="foot__amigo">Amigo a Casa ® 2022 - Buenos Aires, Argentina</p>
-    <h4 class="foot__derechos">Todos los derechos reservados</h4>
+    <h6 class="foot__derechos">Todos los derechos reservados</h6>
 </footer>
-<script src="js/bootstrap.bundle.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
