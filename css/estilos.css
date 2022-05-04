@@ -261,8 +261,7 @@ ul {
 }
 .equipo__1, .equipo__2, .equipo__3, .equipo__4 {
     width: 300px;
-    height: 500px;
-    border: 1pt solid black;
+    height: 570px;
     margin-top: 20pt;
     display: flex;
     flex-direction: column;
@@ -271,7 +270,6 @@ ul {
 }
 .equipo__img {
     margin-top: 10pt;
-    border: 1pt solid black;
 }
 .equipo__img:hover {
     transform: scale(1.5);
@@ -384,6 +382,11 @@ ul {
 .Perritos__title {
     margin-left: 10pt;
 }
+.foot__img:hover {
+    transform: scale(1.5);
+    transition: transform 3s;
+}
+
 
 
 @media screen and (max-width: 600px) {
