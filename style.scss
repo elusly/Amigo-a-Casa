@@ -1,0 +1,15 @@
+@import './components/basics.scss';
+@import './components/variables';
+@import './components/footer';
+.perritos {
+    margin-left: 10pt;
+
+}
+.perritosimg {
+    margin-left: 10pt;
+    &__hover:hover {
+        transform: translate(50px);
+        box-shadow: $boxshadow;
+    }
+}
+
