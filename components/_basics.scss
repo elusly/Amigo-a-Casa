@@ -86,3 +86,26 @@ ul {
 .main {
     padding-top: 100px;
 }
+.titles {
+    font-size: 40px;
+    font-weight: bold;
+}
+// Entre paréntesis va la variable que quiero podes cambiar. Le pongo un nombre y el mismo nombre abajo. 
+@mixin perritos__t($justify){
+
+    margin-top: 20px;
+    padding: 10px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: $justify;
+    
+    box-shadow: 0 0 10px rgba(33, 33, 33, .5 );
+    
+}
+$estilos: (
+    color: blueviolet, 
+    fuente: 25px,
+    subrayado: underline,
+);
