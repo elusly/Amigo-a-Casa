@@ -1,0 +1,107 @@
+.perritos__card {
+    @extend .card__title;
+
+}
+body {
+    background-color: $colorfondo;
+}
+.perritos__head {
+    @extend .titles;
+    
+}
+.perritos__subt {
+    color: map-get($map: $estilos, $key: color);
+    font-size: map-get($map: $estilos, $key: fuente );
+    text-align: map-get($map: $estilos, $key: align );
+}
+
+
+// Despues, acá en los paréntesis le pongo el valor de la variable que quiero aplicar para ESTA SECCIÓN 
+.perritosprueba {
+    @include perritos__t(center);
+}
+.perritos__t1 {
+    @include perritos_C;
+
+}
+.perritos__t2 {
+    @include perritos_C;
+}
+.perritos__t3 {
+    @include perritos_C;
+
+}
+.perritos__t4 {
+    @include perritos_C;
+
+}
+.perritos__t5 {
+    @include perritos_C;
+
+}
+.perritos__t6 {
+    @include perritos_C;
+
+}
+@media screen and (max-width: 600px) {
+    
+    .perritos__card {
+        width: 100%;
+        height: 130px;
+        margin-top: 20px;
+    }
+    .perritosprueba {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, fit-content);
+        grid-template-areas: 
+        "m1"
+        "m2"
+        "m3"
+        "m4"
+        "m5"
+        "m6";
+        justify-content: center;
+        align-items: center;
+    }
+    @mixin mediaqperritos {
+        width: 90%;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        & img {
+            margin-bottom: 10pt;
+        }
+    
+    }
+    .perritos__t1 {
+        grid-area: m1;
+        @include mediaqperritos;
+    }
+    .perritos__t2 {
+        grid-area: m2;
+        @include mediaqperritos;
+        & img {
+            width: 270px;
+            height: 160px;
+         
+        }
+    }
+    .perritos__t3 {
+        grid-area: m3;
+        @include mediaqperritos;
+    }
+    .perritos__t4 {
+        grid-area: m4;
+        @include mediaqperritos;
+    }
+    .perritos__t5 {
+        grid-area: m5;
+        @include mediaqperritos;
+    }
+
+    .perritos__t6 {
+        grid-area: m6;
+        @include mediaqperritos;
+    }
+    
+}

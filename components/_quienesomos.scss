@@ -1,0 +1,120 @@
+.quiesom {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "qs1"
+    "qs2";
+}
+.quienessomos__titulo {
+    font-size: 30px;
+    grid: qs1;
+    padding-left: 50pt;
+    margin-top: 20px;
+}
+.nosotros {
+    grid-area: qs2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around; 
+
+}
+
+.quienessomos__texto {
+    text-align: justify;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+}
+.quienessomos__img img{
+    border-radius: 10px;
+}
+.quienessomos__img img:hover {
+    transform: scale(1.02);
+    transition: transform 1s;
+    box-shadow: 0 0 10px rgba(33, 33, 33, .5 );
+}
+.equipo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50pt;
+    margin-bottom: 10pt;
+    gap: 10pt;
+}
+.equipo__1, .equipo__2, .equipo__3, .equipo__4 {
+    width: 300px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.equipo__img {
+    margin-top: 10pt;
+    border-radius: 5px;
+}
+.equipo__img:hover {
+    transform: scale(1.3);
+    transition: transform 1s;
+}
+.equipo__tx {
+    text-align: justify;
+    padding-left: 10pt;
+    padding-right: 10pt;
+}
+@media screen and (max-width: 600px) {
+    
+    .quiesom {
+        grid-template-rows: repeat(2, auto);
+    }
+    .nosotros {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .quienessomos__titulo {
+        text-align: center;
+        margin-top: 1rem;
+        padding-left: 0;
+        width: 90%;
+    }
+    .equipo {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0pt;
+    }
+    .equipo__1, .equipo__2, .equipo__3, .equipo__4 {
+        width: 90%;
+        height: fit-content;
+        overflow: hidden;
+        @include centrar;
+
+    }
+    .equipo__1 {
+        margin-top: 20px;
+    }
+    .main {
+        padding-top: 0;
+    }
+    .quienessomos__img {
+        @include centrar;
+    }
+    .quienessomos__img img{
+        display: none;
+        
+    }
+    .quienessomos__img img:hover {
+        transform: none;
+    }
+    .equipo__img:hover {
+        transform: none;
+    }
+    .quienessomos__texto {
+        width: 90%;
+        @include centrar;
+        justify-content: center;
+        height: fit-content;
+        align-items: center;
+    }
+
+}

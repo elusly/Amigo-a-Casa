@@ -12,31 +12,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bf327bc232.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="header">
-    <img class="header__img" src="../imagenes/Patitared.png" alt="Logo">
-    <nav class="nav">
-      <ul class="nav__lista">
-        <li><a class="nav__item" href="../index.html">Inicio</a></li>
-        <li><a class="nav__item" href="quienesomos.html">Quiénes somos</a></li>
-        <li><a class="nav__item" href="perritos.html">Perritos</a></li>
-        <li><a class="nav__item" href="gatitos.html">Gatitos</a></li>
-        <li><a class="nav__item" href="queresadoptar.html">Querés adoptar?</a></li>
-      </ul>
-    </nav>
-  </header>
+  <header class="header__index">
+    <div class="header__index--1">
+        <img class="header__img" src="../imagenes/Patitared.png" alt="Logo">
+        <nav class="nav">
+            <ul class="nav__lista">
+                <li><a class="nav__item" href="../index.html">Inicio</a></li>
+                <li><a class="nav__item" href="quienesomos.html">Quiénes somos</a></li>
+                <li><a class="nav__item" href="perritos.html">Perritos</a></li>
+                <li><a class="nav__item" href="gatitos.html">Gatitos</a></li>
+                <li><a class="nav__item" href="queresadoptar.html">Querés Adoptar?</a></li>
+            </ul>
+        </nav>
+        <a class="hamburguesa"data-bs-toggle="collapse" href="#menumobile" role="button" aria-expanded="false" aria-controls="collapseExample"><i class= "icono fas fa-bars"></i></a>
+      </div>
+      <div class="collapse menudesplegado" id="menumobile">
+          <nav class="nav">
+              <ul class="nav__lista--mobile">
+                  <li><a class="nav__item" href="../index.html">Inicio</a></li>
+                  <li><a class="nav__item" href="quienesomos.html">Quiénes somos</a></li>
+                  <li><a class="nav__item" href="perritos.html">Perritos</a></li>
+                  <li><a class="nav__item" href="gatitos.html">Gatitos</a></li>
+                  <li><a class="nav__item" href="queresadoptar.html">Querés Adoptar?</a></li>
+              </ul>
+          </nav>
+      </div>
+    
+    
+</header>
   <main class="main">
    <section class="perritos">
-    <h1 class="perritos__head">Perritos</h1>
-    <h5 class="perritos__subt">Apretá en cada uno para conocer su historia!</h5>
+     <div class="perritos__card">
+      <h1 class="perritos__head">Perritos</h1>
+      <h5 class="perritos__subt">Nuestros perritos rescatados con todo el amor del mundo!</h5>
+    </div>
    </section>
-   <section class="perritosimg">
-     <img src="../imagenes/perri.jpg" alt="perritos" class="perritosimg__hover">
-    </section>
     <section class="perritosprueba">
-     <div class="perritos__t1"><img src="../imagenes/perriii.jpg" alt="" height="200px"></div>
-     <div class="perritos__t2"><img src="../imagenes/perritos.jpg" alt="" height="200px"></div>
+     <div class="perritos__t1"><img src="../imagenes/perriii.jpg" alt="" height="200px"><span><h3>Sandy</h3><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto est ullam, asperiores ut totam doloribus in veritatis fugit minus! Iusto est consequuntur rem ut optio repudiandae aliquid eaque! Tenetur, ex.
+     Sapiente debitis unde consequuntur id odit nesciunt quas molestias eos sed sit ducimus nam aut ipsum illum, iure distinctio fugiat earum maxime est non possimus ad eum. Ut, corporis veritatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos veritatis reprehenderit similique.</p></span></div>
+     <div class="perritos__t2"><img src="../imagenes/perritos.jpg" alt="" height="200px"><h3>Pandora, Batman y Muffin</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus impedit omnis laboriosam accusantium aspernatur? Odio quidem eaque voluptatum et veniam magnam illum non, facilis, recusandae quam, molestias quaerat corrupti obcaecati?</p></div>
+     <div class="perritos__t3"><img src="../imagenes/perri.jpg" alt="" height="200px"><h3>Pipa</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus impedit omnis laboriosam accusantium aspernatur? Odio quidem eaque voluptatum et veniam magnam illum non, facilis, recusandae quam, molestias quaerat corrupti obcaecati?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, consequatur officiis velit tempore fuga illum, ab repellendus.</p></div>
+     <div class="perritos__t4"><img src="../imagenes/perrito3.jpg" alt="" height="200px"><h3>Tyr</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus impedit omnis laboriosam accusantium aspernatur? Odio quidem eaque voluptatum et veniam magnam illum non, facilis, recusandae quam, molestias quaerat corrupti obcaecati? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed eveniet minima voluptate laboriosam laudantium delectus aspernatur labore, exercitationem obcaecati officiis illo eius sapiente possimus corrupti! Dolorem consequatur at vel?</p></div>
+     <div class="perritos__t5"><img src="../imagenes/majita.jfif" alt="" height="200px"><h3>Maja</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus impedit omnis laboriosam accusantium aspernatur? Odio quidem eaque voluptatum et veniam magnam illum non, facilis, recusandae quam, molestias quaerat corrupti obcaecati? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit deserunt consequatur quo cum quos? Illum in nisi suscipit natus doloremque ducimus officiis eaque asperiores temporibus vero numquam, aut sapiente sit!</p></div>
+     <div class="perritos__t6"><img src="../imagenes/arethuli.jfif" alt="" height="200px"><h3>Aretha</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus impedit omnis laboriosam accusantium aspernatur? Odio quidem eaque voluptatum et veniam magnam illum non, facilis, recusandae quam, molestias quaerat corrupti obcaecati? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quod doloribus reiciendis magnam nesciunt molestias cumque consequatur. Eaque quisquam distinctio labore recusandae accusantium? In perspiciatis doloribus, eligendi tenetur inventore libero.</p></div>
     </section>
     
 

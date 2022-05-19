@@ -8,28 +8,45 @@
     <meta name="description" content="Gatitos tiernos que vas a amar toda tu vida. No pierdas tu oportunidad, adoptá un gato hoy!">
     <title>Adopción gatos</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bf327bc232.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="header">
-    <img class="header__img" src="../imagenes/Patitared.png" alt="Logo">
-    <nav class="nav">
-      <ul class="nav__lista">
-        <li><a class="nav__item" href="../index.html">Inicio</a></li>
-        <li><a class="nav__item" href="quienesomos.html">Quiénes somos</a></li>
-        <li><a class="nav__item" href="perritos.html">Perritos</a></li>
-        <li><a class="nav__item" href="gatitos.html">Gatitos</a></li>
-        <li><a class="nav__item" href="queresadoptar.html">Querés adoptar?</a></li>
-      </ul>
-    </nav>
+  <header class="header__index">
+    <div class="header__index--1">
+      <img class="header__img" src="../imagenes/Patitared.png" alt="Logo">
+      <nav class="nav">
+          <ul class="nav__lista">
+              <li><a class="nav__item" href="../index.html">Inicio</a></li>
+              <li><a class="nav__item" href="quienesomos.html">Quiénes somos</a></li>
+              <li><a class="nav__item" href="perritos.html">Perritos</a></li>
+              <li><a class="nav__item" href="gatitos.html">Gatitos</a></li>
+              <li><a class="nav__item" href="queresadoptar.html">Querés Adoptar?</a></li>
+          </ul>
+      </nav>
+      <a class="hamburguesa"data-bs-toggle="collapse" href="#menumobile" role="button" aria-expanded="false" aria-controls="collapseExample"><i class= "icono fas fa-bars"></i></a>
+  </div>
+  <div class="collapse menudesplegado" id="menumobile">
+      <nav class="nav">
+          <ul class="nav__lista--mobile">
+              <li><a class="nav__item" href="../index.html">Inicio</a></li>
+              <li><a class="nav__item" href="quienesomos.html">Quiénes somos</a></li>
+              <li><a class="nav__item" href="perritos.html">Perritos</a></li>
+              <li><a class="nav__item" href="gatitos.html">Gatitos</a></li>
+              <li><a class="nav__item" href="queresadoptar.html">Querés Adoptar?</a></li>
+          </ul>
+      </nav>
+  </div>
   </header>
   <main class="main">
     <section class="cat">
-      <h1 class="cat__title">Gatitos</h1>
-      <h2 class="cat__p">Cada gatito tiene su historia, hacé click para conocerla!</h2>
+      <div class="cat__card">
+        <h1 class="cat__title">Gatitos</h1>
+        <h2 class="cat__p">Cada gatito tiene su historia, hacé click para conocerla!</h2>
+      </div>
       <div class="cat__grid" id="Arriba">
         <div class="cat__grid--hijo1"><a href="#Stefan"><img src="../imagenes/gatito1.jpg" alt="Gatito1" class="cat__img"></a></div>
         <div class="cat__grid--hijo2"><a href="#Pandora"><img src="../imagenes/gatito.jpg" alt="Gatito2" class="cat__img"></a></div>

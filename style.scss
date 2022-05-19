@@ -1,33 +1,8 @@
 @import './components/basics.scss';
 @import './components/variables';
 @import './components/footer';
-.perritos {
-    margin-left: 10pt;
-
-}
-.perritos__head {
-    @extend .titles;
-    
-}
-.perritos__subt {
-    color: map-get($map: $estilos, $key: color);
-    font-size: map-get($map: $estilos, $key: fuente );
-}
-.perritosimg {
-    margin-left: 10pt;
-    &__hover:hover {
-        transform: translate(50px);
-        box-shadow: $boxshadow;
-    }
-}
-// Despues, acá en los paréntesis le pongo el valor de la variable que quiero aplicar para ESTA SECCIÓN 
-.perritosprueba {
-    @include perritos__t(space-evenly)
-}
-.perritos__t1 {
-    box-shadow: $boxshadow;
-}
-.perritos__t2 {
-    box-shadow: $boxshadow;
-}
-
+@import './components/perritos';
+@import './components/gatitos';
+@import './components/quienesomos';
+@import './components/queresadoptar';
+@import './components/index';

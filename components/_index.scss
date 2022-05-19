@@ -1,0 +1,209 @@
+.mainindex {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: 80px 400px 400px;
+    grid-template-areas: 
+    "title"
+    "main1"
+    "main2";
+    row-gap: 2rem;
+    column-gap: 1rem;
+    gap: 0.5rem;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+.intro__title {
+    font-size: 50px;
+    text-align: center;
+    grid-area: title;
+}
+.secintro {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    grid-area: main1;
+}
+
+.intro__motto{
+    font-size: 16px;
+    padding-top: 80px;
+    width: 300px;
+    height: 250px;
+    align-items: center;
+    padding-left: 5pt;
+    
+}
+.intro__motto--high {
+    font-size: 35px;
+    color: #FD8EA0;
+    font-weight: bold;
+}
+.hamburguesa {
+    text-decoration: none;
+    display: none;
+}
+.secmenu {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10pt;
+    align-items: center;
+    justify-content: center;
+    padding-right: 100px;
+    
+}
+.secmenu__fotos {
+    display: flex;
+    flex-direction: row;
+    gap: 10pt;
+}
+.secmenu__img {
+    border: 1px solid black;
+}
+
+.secmenu__img:hover {
+    box-shadow: 0 0 10px rgba(33, 33, 33, .5 );
+    transform: scale(1.05);
+    transition: transform 500ms;
+}
+
+.secmenu__title {
+    font-size: 20px;
+}
+.Perritos__title {
+    margin-left: 10pt;
+}
+.foot__img:hover {
+    transform: scale(1.5);
+    transition: transform 3s;
+}
+@media screen and (max-width: 600px) {
+    body { 
+        background-color: rgb(239, 226, 245);
+    
+    }
+    .header {
+        height: 100px;
+        margin-top: 0pt;
+        padding-left: 15pt;
+        padding-bottom: 10pt;
+        justify-content: flex-start;
+        padding-right: 15pt;
+        overflow-y: visible;
+    }
+    .header__index {
+        height: 100px;
+        margin-top: 0pt;
+        
+        padding-bottom: 10pt;
+        justify-content: space-between;
+
+        overflow-y: visible;
+    }
+    .header__img {
+        padding-top: 17pt;
+        margin-left: 0pt;
+        padding-bottom: 10pt;
+    }
+    .header__index--1 {
+        padding-left: 15pt;
+        padding-right: 15pt;
+    }
+    .menudesplegado {
+        margin-top: 1rem;
+        padding-left: 1rem;
+        padding-top: .5rem;
+        background: whitesmoke;
+        z-index: 1;
+        width: 100%;
+    }
+    .hamburguesa {
+        display: block;
+    }
+    .menudesplegado  li {
+        padding-top: 1rem;
+        font-size: large;
+    }
+    .menudesplegado li:last-child {
+        padding-bottom: 1rem;
+    }
+    
+    .icono {
+        font-size: 30pt;
+        text-align: right;
+        display: block;
+        color: black;
+
+    }    
+    .nav__lista {
+        display: none;
+    }
+    .nav__lista--mobile {
+        flex-direction: column;
+    }
+    
+    .mainindex, main {
+        grid-template-rows: repeat(2, auto);
+    }
+    
+    .secintro {
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro__title {
+        font-size: 30pt;
+    }
+    .intro__head {
+        text-align: center;
+    }
+    .intro__head--img {
+        width: 300px;
+        height: 300px;
+    }
+    .intro__motto{
+        font-size: 13px;
+        width: 300px;
+        height: auto;
+        align-items: center;
+        padding-left: 5pt;
+        padding-right: 5pt;
+        justify-content: center;
+        padding-top: 0px;
+        padding-bottom: 10pt;
+        text-align: center;
+    }
+    .secmenu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: none;
+        padding-right: 0px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .secmenu__title {
+        text-align: center;
+    }
+    .secmenu__fotos {
+        display: flex;
+        flex-direction: column;
+    }
+    .sec2__pic {
+        margin-left: 0 auto;
+
+    }
+    .sec2__pic--title1 {
+        text-align: center;
+    }
+    .sec2__pic--title2 {
+        text-align: center;
+    }
+    
+}
